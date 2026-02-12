@@ -1,0 +1,100 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="RoadMap" id="roadmap">
+    <mxGraphModel dx="1722" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1" value="RoadMap: Интеграция кол-центра" vertex="1">
+          <mxGeometry height="40" width="1520" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h_sys" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;align=left;rounded=0" value="Системы" vertex="1">
+          <mxGeometry height="36" width="220" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h_q2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1;rounded=0" value="Q2 2026 (Март-Май)&lt;br&gt;MVP банковский кол-центр" vertex="1">
+          <mxGeometry height="36" width="400" x="280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h_q3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;rounded=0" value="Q3 2026 (Июнь-Авг)&lt;br&gt;Партнёрский кол-центр через SFTP" vertex="1">
+          <mxGeometry height="36" width="400" x="700" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h_q4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;rounded=0" value="Q4 2026 (Сен-Ноя)&lt;br&gt;Оптимизация (опционально)" vertex="1">
+          <mxGeometry height="36" width="440" x="1120" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sys1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="Rate Management Service" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T1.1: Public API /rates&lt;br&gt;(2 спр, 13 SP)" vertex="1">
+          <mxGeometry height="36" width="120" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T1.2: Kafka RateUpdated&lt;br&gt;(1.5 спр, 8 SP)" vertex="1">
+          <mxGeometry height="36" width="130" x="410" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t1_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T1.3: Redis cache&lt;br&gt;(0.5 спр, 5 SP)" vertex="1">
+          <mxGeometry height="36" width="130" x="550" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sys2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="Kong API Gateway" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T4.1: Route к Public API&lt;br&gt;(1 спр, 5 SP)" vertex="1">
+          <mxGeometry height="36" width="130" x="280" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="t4_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T4.2: Auth + Rate Limit&lt;br&gt;(1 спр, 8 SP)" vertex="1">
+          <mxGeometry height="36" width="130" x="420" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="sys3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="SFTP Server" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T3.1: Deploy SFTP&lt;br&gt;(1.5 спр, 8 SP)" vertex="1">
+          <mxGeometry height="36" width="120" x="700" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T3.2: Мониторинг&lt;br&gt;(0.5 спр)" vertex="1">
+          <mxGeometry height="36" width="100" x="830" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_3" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T3.3: HA режим&lt;br&gt;(1 спр)" vertex="1">
+          <mxGeometry height="36" width="100" x="940" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="t3_3_q4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;rounded=0" value="T3.3: HA режим&lt;br&gt;(если не в Q3, 1 спр)" vertex="1">
+          <mxGeometry height="36" width="140" x="1120" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="sys4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="SFTP Rate Exporter" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T2.1: Kafka Consumer&lt;br&gt;(1.5 спр)" vertex="1">
+          <mxGeometry height="36" width="110" x="700" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T2.2: Сериализация CSV&lt;br&gt;(1 спр)" vertex="1">
+          <mxGeometry height="36" width="110" x="820" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T2.4: Upload SFTP&lt;br&gt;(1.5 спр)" vertex="1">
+          <mxGeometry height="36" width="110" x="940" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T2.5: Cleanup&lt;br&gt;(0.5 спр)" vertex="1">
+          <mxGeometry height="36" width="90" x="1060" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="t2_5_q4" parent="1" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=9;rounded=0" value="T2.5: Cleanup&lt;br&gt;(если не в Q3, 0.5 спр)" vertex="1">
+          <mxGeometry height="31" width="140" x="1170" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="sys5" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="Система кол-центра (Банк)" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t5_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T5.1: Интеграция API&lt;br&gt;(0.5 спр)" vertex="1">
+          <mxGeometry height="36" width="120" x="280" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="sys6" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="Партнёрский кол-центр" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="t6_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T6.1: Интеграция SFTP&lt;br&gt;(1 спр)" vertex="1">
+          <mxGeometry height="36" width="120" x="700" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="sys7" parent="1" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;fontSize=11;rounded=0" value="DevOps / Infrastructure" vertex="1">
+          <mxGeometry height="32" width="220" x="40" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="t7_2" parent="1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;rounded=0" value="T7.2: Мониторинг&lt;br&gt;(Q2, 1 спр)" vertex="1">
+          <mxGeometry height="36" width="120" x="280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="t7_1" parent="1" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;rounded=0" value="T7.1: CI/CD&lt;br&gt;(Q3, 1.5 спр)" vertex="1">
+          <mxGeometry height="36" width="120" x="700" y="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
